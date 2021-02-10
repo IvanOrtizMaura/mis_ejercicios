@@ -1,22 +1,22 @@
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
+import Layout from './compos/Layout'
+
+
 const index = () => ( 
-    <div>
+    
+    <Layout title="Home Pages">
         <Head>
-        <title>Usoib</title>
-        <link rel="icon" href="Images/usoib.ico"/>
+            <title>Usoib</title>
         </Head>
-        <div>
-            <h1>Home pages</h1>
+
             <Link href="/about">
             <a>Go to about</a>
             </Link>
             <p>Welcome to the home pages</p>
-        </div>
-    </div>
+    </Layout>
     
-   
 );
 
 export default index;
