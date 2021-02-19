@@ -5,8 +5,8 @@ import Router from 'next/router'
 import NProgress from 'nprogress'
 
 Router.onRouteChangeStart = url => {
-    console.log(url)
-    NProgress.start()
+    console.log(url);
+    NProgress.start();
 }
 
 Router.onRouteChangeComplete = () => NProgress.done();
